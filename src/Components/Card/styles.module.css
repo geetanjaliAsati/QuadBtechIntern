@@ -1,0 +1,117 @@
+.card {
+    width: 100%;
+    padding: 1rem;
+    background: rgb(41, 39, 39);
+}
+
+.cardLink {
+    display: block;
+    box-shadow: 5px 2px 12px 0 rgba(207, 207, 207, 0.05);
+    border-width: 2px;
+    border-radius: 0.375rem/* 6px */;
+    border-color: rgb(24 24 27 / 0.1);
+    overflow: hidden;
+    height: 100%;
+    padding: 4px;
+}
+.cardLink:hover {
+    box-shadow: 0 11px 12px 0 rgba(225, 227, 227, 0.08);
+}
+.cardHeader {
+    position: relative;
+     padding-bottom: 20rem;
+     overflow: hidden;
+     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+     display: flex;
+     flex-direction: row;
+}
+.cardImg {
+    position: absolute;
+    /* top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px; */
+ max-height: 20rem;
+  width: 100%; 
+  object-fit: contain;
+  /* margin-top: 1rem; */
+/* margin-bottom: 1rem; */
+padding-left: 1rem;
+padding-right: 1rem;
+}
+.rating .starIcon {
+
+    height: 1rem;
+    width: 1rem ;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.starIcon {
+    color:  rgb(250 204 21);
+}
+.cardLink img{
+    transition: transform .3s ease-in-out;
+   }
+   .cardLink img:hover{
+    transform: scale(1.02)
+}
+.cardMovieInfo {
+    color: rgb(130, 128, 128)
+}
+
+.rating {
+    display: flex;
+     flex-direction: row;
+      margin-bottom: 0.5rem;
+}
+
+.addToCart {
+    margin-left: auto;
+    margin-right: auto;
+   justify-content: space-between;
+    width: 100%; 
+    margin-top: 0.5rem;
+}
+
+.heartButtonIcon {
+   float: right;
+    margin-top: auto;
+margin-bottom: auto;height: 1.25rem/* 20px */;width: 1.25rem/* 20px */; color: red;
+}
+.addToCartButton {
+    display: inline-flex;
+     justify-content: center;
+     width: 100%;
+     border-radius: 0.375rem;
+     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+     font-size: 0.900rem;
+line-height: 1.25rem;
+font-weight: 600;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+background-color: transparent;
+padding-top: 0.5rem/* 8px */;
+padding-bottom: 0.5rem/* 8px */;
+color: white;
+transition: 0.4s;
+}
+
+.addToCartButton:hover {
+   background: red;
+   color: black;
+}
+@media (min-width: 640px) {
+    .card {
+        width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .card {
+        width: 25%;
+    }
+}
+@media (min-width: 1280px) {
+    .card{
+        width: 25%;
+    }
+}

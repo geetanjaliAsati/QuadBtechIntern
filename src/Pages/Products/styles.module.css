@@ -1,0 +1,9 @@
+.cardGroup {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
